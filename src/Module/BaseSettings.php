@@ -173,6 +173,13 @@ class BaseSettings extends BaseModule
 		];
 
 		$tabs[] = [
+			'label'     => $this->t('Import Blocks'),
+			'url'       => 'settings/importblocks',
+			'selected'  => ($this instanceof Settings\BlockImport) ? 'active' : '',
+			'accesskey' => '',
+		];
+
+		$tabs[] = [
 			'label'     => $this->t('Export personal data'),
 			'url'       => 'settings/userexport',
 			'selected'  => ($this instanceof Settings\UserExport) ? 'active' : '',

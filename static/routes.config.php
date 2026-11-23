@@ -735,6 +735,7 @@ return [
 		'/display'                         => [Module\Settings\Display::class,          [R::GET, R::POST]],
 		'/features'                        => [Module\Settings\Features::class,         [R::GET, R::POST]],
 		'/importcontacts'                  => [Module\Settings\ContactImport::class,    [R::GET, R::POST]],
+		'/importblocks'	                   => [Module\Settings\BlockImport::class,      [R::GET, R::POST]],
 		'/oauth'                           => [Module\Settings\OAuth::class,            [R::GET, R::POST]],
 		'/profile'                         => [
 			'[/]'                => [Module\Settings\Profile\Index::class,       [R::GET, R::POST]],
